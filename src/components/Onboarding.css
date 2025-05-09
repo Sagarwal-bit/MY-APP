@@ -1,0 +1,112 @@
+.onboarding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .onboarding-container {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .onboarding h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .onboarding p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 1rem;
+  }
+  
+  .travel-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .travel-options button {
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .travel-options button.active {
+    background-color: #6200ee;
+    color: #fff;
+    border-color: #6200ee;
+  }
+  
+  .continue-btn {
+    background-color: #3d5afe;
+    color: white;
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .toggle-mode {
+    margin-top: 1.2rem;
+    background: none;
+    border: none;
+    color: #3d5afe;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.9rem;
+  }
+  
+  /* DARK MODE */
+  .onboarding.dark {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .onboarding.dark input,
+  .onboarding.dark select {
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  /* LIGHT MODE */
+  .onboarding.light {
+    background: linear-gradient(120deg, #ffffff, #f2f2f2);
+    color: black;
+  }
+  
+  .onboarding.light input,
+  .onboarding.light select {
+    background-color: white;
+    color: black;
+  }
+  
